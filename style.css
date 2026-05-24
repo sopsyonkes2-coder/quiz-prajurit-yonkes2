@@ -1,0 +1,652 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+
+  font-family:
+  Arial,
+  sans-serif;
+
+  background:
+  linear-gradient(
+    135deg,
+    #020617,
+    #0f172a,
+    #111827
+  );
+
+  color:white;
+
+  min-height:100vh;
+
+  padding:20px;
+
+  overflow-x:hidden;
+}
+
+/*
+====================================
+SCROLLBAR
+====================================
+*/
+
+::-webkit-scrollbar{
+
+  width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+
+  background:#22c55e;
+
+  border-radius:10px;
+}
+
+/*
+====================================
+CONTAINER
+====================================
+*/
+
+.container{
+
+  width:100%;
+
+  max-width:1100px;
+
+  margin:auto;
+}
+
+/*
+====================================
+LOGIN BOX
+====================================
+*/
+
+.login-box{
+
+  width:100%;
+
+  max-width:450px;
+
+  margin:auto;
+
+  background:
+  rgba(15,23,42,0.95);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  border-radius:30px;
+
+  padding:40px 30px;
+
+  box-shadow:
+  0 0 40px rgba(0,0,0,0.5);
+
+  backdrop-filter:blur(10px);
+}
+
+/*
+====================================
+LOGO
+====================================
+*/
+
+.logo-title{
+
+  text-align:center;
+
+  margin-bottom:30px;
+}
+
+.logo{
+
+  width:120px;
+
+  margin-bottom:20px;
+
+  filter:
+  drop-shadow(
+    0 0 20px
+    rgba(34,197,94,0.5)
+  );
+
+  animation:
+  pulse 3s infinite;
+}
+
+@keyframes pulse{
+
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.05);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+}
+
+.logo-title h1{
+
+  color:#22c55e;
+
+  font-size:38px;
+
+  margin-bottom:10px;
+
+  letter-spacing:2px;
+
+  text-shadow:
+  0 0 15px rgba(34,197,94,0.5);
+}
+
+.logo-title p{
+
+  color:#cbd5e1;
+
+  line-height:1.8;
+
+  font-size:14px;
+}
+
+/*
+====================================
+INPUT
+====================================
+*/
+
+input{
+
+  width:100%;
+
+  padding:16px;
+
+  border:none;
+
+  border-radius:15px;
+
+  background:#1e293b;
+
+  color:white;
+
+  font-size:18px;
+
+  text-align:center;
+
+  margin-bottom:20px;
+
+  outline:none;
+
+  transition:0.3s;
+
+  border:
+  1px solid transparent;
+}
+
+input:focus{
+
+  border:
+  1px solid #22c55e;
+
+  box-shadow:
+  0 0 15px rgba(34,197,94,0.3);
+}
+
+input::placeholder{
+
+  text-align:center;
+
+  color:#94a3b8;
+}
+
+/*
+====================================
+BUTTON
+====================================
+*/
+
+button{
+
+  width:100%;
+
+  padding:15px;
+
+  border:none;
+
+  border-radius:15px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #16a34a,
+    #22c55e
+  );
+
+  color:white;
+
+  font-size:16px;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+  letter-spacing:1px;
+
+  box-shadow:
+  0 0 20px rgba(34,197,94,0.3);
+}
+
+button:hover{
+
+  transform:
+  translateY(-3px);
+
+  box-shadow:
+  0 0 25px rgba(34,197,94,0.6);
+}
+
+/*
+====================================
+MESSAGE
+====================================
+*/
+
+#message{
+
+  margin-top:20px;
+}
+
+/*
+====================================
+USER INFO
+====================================
+*/
+
+.user-info{
+
+  text-align:center;
+
+  line-height:1.8;
+}
+
+.user-info h3{
+
+  color:#22c55e;
+
+  font-size:24px;
+}
+
+/*
+====================================
+QUIZ BOX
+====================================
+*/
+
+.quiz-box{
+
+  background:
+  rgba(15,23,42,0.96);
+
+  padding:30px;
+
+  border-radius:30px;
+
+  box-shadow:
+  0 0 40px rgba(0,0,0,0.5);
+
+  border:
+  1px solid rgba(255,255,255,0.06);
+}
+
+.quiz-box h2{
+
+  text-align:center;
+
+  color:#22c55e;
+
+  margin-bottom:30px;
+
+  font-size:32px;
+
+  text-shadow:
+  0 0 15px rgba(34,197,94,0.5);
+}
+
+/*
+====================================
+QUESTION
+====================================
+*/
+
+.question{
+
+  background:#1e293b;
+
+  padding:25px;
+
+  border-radius:20px;
+
+  margin-bottom:25px;
+
+  border:
+  1px solid rgba(255,255,255,0.04);
+}
+
+.question h3{
+
+  margin-bottom:20px;
+
+  line-height:1.8;
+
+  font-size:18px;
+}
+
+label{
+
+  display:block;
+
+  padding:14px;
+
+  margin-bottom:12px;
+
+  background:#334155;
+
+  border-radius:14px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+  border:
+  1px solid transparent;
+}
+
+label:hover{
+
+  background:#475569;
+
+  border:
+  1px solid #22c55e;
+}
+
+input[type="radio"]{
+
+  margin-right:10px;
+}
+
+/*
+====================================
+TIMER
+====================================
+*/
+
+#timer{
+
+  background:
+  linear-gradient(
+    135deg,
+    #dc2626,
+    #ef4444
+  );
+
+  padding:12px 20px;
+
+  border-radius:15px;
+
+  font-weight:bold;
+
+  font-size:20px;
+
+  box-shadow:
+  0 0 20px rgba(239,68,68,0.5);
+}
+
+/*
+====================================
+RESULT
+====================================
+*/
+
+.result-score{
+
+  text-align:center;
+
+  font-size:90px;
+
+  color:#22c55e;
+
+  font-weight:bold;
+
+  margin:25px 0;
+
+  text-shadow:
+  0 0 25px rgba(34,197,94,0.5);
+}
+
+.motivation{
+
+  background:#1e293b;
+
+  padding:20px;
+
+  border-radius:18px;
+
+  margin-top:25px;
+
+  text-align:center;
+
+  line-height:1.8;
+
+  border:
+  1px solid rgba(255,255,255,0.06);
+}
+
+/*
+====================================
+FOOTER
+====================================
+*/
+
+.footer{
+
+  margin-top:25px;
+
+  text-align:center;
+
+  color:#94a3b8;
+
+  font-size:13px;
+
+  line-height:1.8;
+}
+
+/*
+====================================
+LEADERBOARD
+====================================
+*/
+
+.leaderboard{
+
+  margin-top:25px;
+
+  background:#1e293b;
+
+  border-radius:20px;
+
+  padding:20px;
+
+  border:
+  1px solid rgba(255,255,255,0.05);
+}
+
+.leaderboard h2{
+
+  text-align:center;
+
+  margin-bottom:20px;
+
+  color:#22c55e;
+
+  text-shadow:
+  0 0 15px rgba(34,197,94,0.4);
+}
+
+.rank-item{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  background:#334155;
+
+  padding:15px;
+
+  border-radius:15px;
+
+  margin-bottom:12px;
+
+  transition:0.3s;
+}
+
+.rank-item:hover{
+
+  transform:translateY(-2px);
+
+  background:#475569;
+}
+
+.rank-left{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:15px;
+}
+
+.rank-number{
+
+  width:40px;
+
+  height:40px;
+
+  border-radius:50%;
+
+  background:
+  linear-gradient(
+    135deg,
+    #16a34a,
+    #22c55e
+  );
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  font-weight:bold;
+
+  box-shadow:
+  0 0 15px rgba(34,197,94,0.5);
+}
+
+.rank-info h3{
+
+  font-size:15px;
+}
+
+.rank-info p{
+
+  font-size:12px;
+
+  color:#cbd5e1;
+}
+
+.rank-score{
+
+  font-size:22px;
+
+  color:#22c55e;
+
+  font-weight:bold;
+}
+
+/*
+====================================
+RESPONSIVE
+====================================
+*/
+
+@media(max-width:768px){
+
+  body{
+
+    padding:10px;
+  }
+
+  .login-box,
+  .quiz-box{
+
+    padding:20px;
+  }
+
+  .logo{
+
+    width:90px;
+  }
+
+  .logo-title h1{
+
+    font-size:28px;
+  }
+
+  .question{
+
+    padding:18px;
+  }
+
+  .question h3{
+
+    font-size:16px;
+  }
+
+  label{
+
+    font-size:14px;
+  }
+
+  .result-score{
+
+    font-size:60px;
+  }
+
+  .rank-item{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:10px;
+  }
+
+  #timer{
+
+    width:100%;
+
+    text-align:center;
+  }
+}
